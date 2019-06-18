@@ -1,0 +1,101 @@
+baseurl = "https://instantdreams.biz/"
+languageCode = "en-ca"
+title = "Rachel and Dean"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Rachel and Dean"
+	description = "Wedding details"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Rachel and Dean"
+
+		[params.navigation.links]
+			about     = "How We Met"
+			services  = "The Plan"
+			portfolio = "Wedding"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Rachel and Dean"
+		subtitle   = "Please celebrate with us"
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "Details of how we met"
+		description = "Find out how to put an image on this area.      Use Markdown to make things bigger.     Does this work?"
+		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = "The Plan"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Save The Date"
+            description = "Are you available on the Labour Day weekend in 2020?"
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Fly to Us"
+			description = "Come join us in Jasper for our wedding!"
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "RSVP"
+            description = "Even if you can't come to us, don't worry! We'll come to you!"
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Visit to England"
+            description = "We will come to England in Spring 2021 to celebrate with you!"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Get the Creative Theme for Hugo"
+
+		[params.aside.button]
+			text = "Download now"
+			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		phone = "123-456-6789"
+		email = "feedback@startbootstrap.com"
